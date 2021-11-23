@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Credit Card Fraud Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1 class="heading"> Credit Card Fraud Detection Results</h1>
+    <div>
+      {% if prediction == 0 %}
+      <h1 class="legit">
+          According to the model trained, the provided transaction is NOT a Fraud transaction.
+      </h1>
+      {% elif prediction == 1 %}
+      <h2 class="fraud">
+          According to the model trained, this transaction is a Fraud transaction.
+      </h2>
+      {% endif %}
+    </div>
+    <a href="/">
+      <button class="btn btn-primary">Retest</button>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+body{
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 2% 10%;
+}
+
+.heading {
+	padding: 50 px;
+}
+
+.subheading {
+	padding: 30px;
+}
+
+.legit {
+	padding: 30px;
+	color: green;
+}
+
+.fraud {
+	padding: 30px;
+	color: red;
+	font-weight: bold;
+}

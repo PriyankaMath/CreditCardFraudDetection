@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Credit Card Fraud Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1 class="heading">Credit Card Fraud Detection</h1>
+    <h4 class="subheading">Enter the 29 feature values below (in order):</h4>
+    <form action="{{ url_for('predict')}}" method="POST">
+        <div class="justify">
+        <textarea name="message" rows="8" cols="50"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
