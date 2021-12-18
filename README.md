@@ -1,15 +1,15 @@
 # CreditCardFraudDetection
 
-### Deployed application: https://creditcardfraud-333007.uw.r.appspot.com/
+Deployed application: https://creditcardfraud-333007.uw.r.appspot.com/
 
-##CMPE-256 Section 49
+CMPE-256 Section 49
 
 Advanced Data Mining
 
 
-###Submitted by
+Submitted by
 
-###Team Data Marvels
+Team Data Marvels
 
 Priyanka Math  015240134
 
